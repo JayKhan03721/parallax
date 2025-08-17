@@ -5,7 +5,6 @@ let targetX = 0, targetY = 0;
 
 window.addEventListener("mousemove", e => {
 
-if (timeline.isActive()) return;
 
   targetX = e.clientX - window.innerWidth / 2;
   targetY = e.clientY - window.innerHeight / 2;
@@ -30,3 +29,4 @@ function animate() {
 }
 
 animate();
+
