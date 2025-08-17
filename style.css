@@ -1,0 +1,302 @@
+@import url('https://fonts.googleapis.com/css2?family=Monsieur+La+Doulaise&family=Tangerine:wght@400;700&display=swap');
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+    font-family:'Monsieur La Doulaise', cursive;
+    background-color: rgb(0, 0, 0);
+}
+
+.logo{
+    width: 20px;
+}
+
+button{
+    display: flex;
+    justify-self: center;
+    position: absolute;
+    top: 23%;
+    right: 27%;
+    z-index: 9999;
+}
+.bird {
+    position: absolute;
+    height: 20px;
+    width: 20px;
+    align-items: center;
+}
+
+header{
+    position: absolute;
+    z-index: 9999;
+    width: 100%;
+    padding: 0.9rem 0;
+    top:0;
+    left: 0;
+    border-bottom: 1px ;
+}
+
+header nav{
+    background-color: transparent;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+main{
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+}
+
+.parallax{
+    pointer-events: none;
+    transition: 0.45scubic-bezier(.2,.49,.32,.99) ;
+    transform: translate(-50%, -50%);
+}
+
+.bg-img{
+    position: absolute;
+   
+    width: 2400px;
+    top: calc(50% - 360px );
+    left: calc(50% + 10px);
+    
+    z-index: 1;
+}
+
+.fog_7 {
+    position: absolute;
+    z-index: 2;
+    width: 1900px;
+    top: calc(50% - 90px);
+    left: calc(50% + 300px);
+    
+}
+
+
+.mountain_10{
+    position: absolute;
+    z-index: 3;
+    width: 700px;
+    top: calc(50% + 35px);
+    left: calc(50% + 170px);
+    
+}
+
+.fog_6{
+    position: absolute;
+    z-index: 4;
+    width: 1600px;
+    top: calc(50% + 85px);
+    left: calc(50% + 10px);
+   
+}
+
+
+.mountain_9{
+    position: absolute;
+    z-index: 5;
+    width: 400px;
+    top: calc(50% + 113px);
+    left: calc(50% - 390px);
+    
+}
+
+.mountain_8{
+    position: absolute;
+    z-index: 6;
+    width: 810px;
+    top: calc(50% + 106px);
+    left: calc(50% - 180px);
+    
+}
+
+.fog_5{
+    position: absolute;
+    z-index: 7;
+    width: 1500px;
+    top: calc(50% + 160px);
+    left: calc(50% - 20px);
+    
+}
+
+.mountain_7{
+    position: absolute;
+    z-index: 8;
+    width: 538px;
+    top: calc(50% + 123px);
+    left: calc(50% + 305px);
+    
+}
+
+.text {
+  position: absolute;
+  pointer-events: auto;
+  z-index: 9; /* keep it above mountains/fogs */
+  top: 35%;
+  left: 50%;
+  transform: translate(-50%, -50%); /* centers perfectly */
+  text-align: center;
+  line-height: 1.2;
+}
+
+/* Remove old .text h1/h2 styles — they’re for HTML text, not SVG */
+
+.text-svg {
+  width: 100vw;
+  height: auto;
+}
+.text-svg text {
+  
+  fill: url(#gradient); /* apply animated gradient */
+}
+/* Handwriting effect */
+.h2, .h1 {
+  font-family: 'Monsieur La Doulaise', cursive; /* handwriting font */
+  fill: none;           /* no fill at start */
+  stroke: rgb(206, 206, 206);        /* white stroke outline */
+  stroke-width: 0.9px;
+  stroke-dasharray: 1000;
+  stroke-dashoffset: 1000;
+}
+
+.h2 {
+  font-size: 60px;
+}
+
+.h1 {
+  font-size: 60px;
+}
+
+
+.mountain_6{
+    position: absolute;
+    z-index: 3;
+    width: 208px;
+    top: calc(50% - 100px);
+    left: calc(50% + 390px);
+}
+
+.fog_4{
+    position: absolute;
+    z-index: 11;
+    width: 590px;
+    top: calc(50% + 223px);
+    left: calc(50% - 59px);
+   
+}
+
+.mountain_5{
+    position: absolute;
+    z-index: 12;
+    width: 525px;
+    top: calc(50% + 230px);
+    left: calc(50% + 130px);
+   
+}
+
+.fog_5{
+    position: absolute;
+    z-index: 13 ;
+    width: 600px;
+    top: calc(50% + 110px);
+    left: calc(50% - 15px);
+  
+}
+
+.mountain_4{
+    position: absolute;
+    z-index: 14;
+    width: 788px;
+    top: calc(50% + 196px);
+    left: calc(50% - 330px);
+    
+}
+
+
+.fog_3{
+    position: absolute;
+    z-index: 18 ;
+    width: 40px;
+    top: calc(50% + 200px);
+    left: calc(50% - 330px);
+    
+}
+
+.mountain_3{
+    position: absolute;
+    z-index: 15;
+    width: 300px;
+    top: calc(50% + 136px);
+    left: calc(50% + 480px);
+    
+}
+
+.mountain_2{
+    position: absolute;
+    z-index: 16;
+    width: 508px;
+    top: calc(50% + 196px);
+    left: calc(50% + 301.5px);
+   
+}
+.mountain_1{
+    position: absolute;
+    z-index: 15;
+    width: 350px;
+    top: calc(50% + 69px);
+    left: calc(50% - 509px);
+   
+}
+
+.sun-rays{
+    position: absolute;
+    z-index: 19;
+    top: 0;
+    right: 0;
+    width: 595px;
+    pointer-events: none;
+}
+
+.black-shadow{
+    position: absolute;
+    z-index: 28;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    pointer-events: none;
+}
+        
+.fog_1{
+    position: absolute;
+    z-index: 13 ;
+    width: 1600px;
+    top: calc(100% - 355px);
+    left: 50%;
+  
+}
+.vigneete {
+  position: absolute;
+  z-index: 100;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  pointer-events: none; /* let clicks/scroll pass through */
+  background: radial-gradient(
+    ellipse at center,
+    rgba(0, 0, 0, 0) 65%,
+    rgba(0, 0, 0, 0.7) 100%
+  );
+}
+
+
